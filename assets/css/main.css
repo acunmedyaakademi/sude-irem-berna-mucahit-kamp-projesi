@@ -525,6 +525,7 @@ table {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .cart-item{
@@ -579,4 +580,39 @@ table {
   text-align: center;
   color: var(--black);
   opacity: 0.25;
+  width: 16px;
+}
+
+.quantity-btn .quantity{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--black);
+}
+
+.cart-dialog-container .total-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.cart-dialog-container .total-price p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--black);
+  opacity: 0.5;
+}
+
+.cart-dialog-container .total-price p.price{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  letter-spacing: 0px;
+  text-align: center;
+  opacity: 1;
 }
