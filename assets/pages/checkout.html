@@ -116,7 +116,7 @@
       </div>
     </div>
   </div>
-  <dialog id="order-completed-dialog" open>
+  <dialog id="order-completed-dialog">
     <div class="order-completed-dialog-container">
       <div class="check-icon">
         <img src="../shared/desktop/check-icon.svg" alt="check icon">
@@ -144,6 +144,49 @@
         </div>
       </div>
       <a href="#" class="btn">BACK TO HOME</a>
+    </div>
+  </dialog>
+  <dialog id="cart-dialog" open>
+    <div class="cart-dialog-container">
+      <div class="cart-dialog-container-top">
+        <h3>CART(<span>3</span>)</h3>
+        <button>Remove all</button>
+      </div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="cart-item-wrapper">
+            <img src="../product-yx1-earphones/mobile/image-product.jpg">
+            <div class="cart-item-wrapper-text">
+              <h3>XX99 MK II</h3>
+              <p>$ 2,999</p>
+            </div>
+          </div>
+          <div class="quantity-btn">
+            <p class="minus-icon">-</p>
+            <p class="quantity">1</p>
+            <p class="plus-icon">+</p>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-wrapper">
+            <img src="../product-yx1-earphones/mobile/image-product.jpg">
+            <div class="cart-item-wrapper-text">
+              <h3>XX99 MK II</h3>
+              <p>$ 2,999</p>
+            </div>
+          </div>
+          <div class="quantity-btn">
+            <p class="minus-icon">-</p>
+            <p class="quantity">1</p>
+            <p class="plus-icon">+</p>
+          </div>
+        </div>
+      </div>
+      <div class="total-price">
+        <p>TOTAL</p>
+        <p class="price">$ 5,446</p>
+      </div>
+      <a href="#" class="btn">CHECKOUT</a>
     </div>
   </dialog>
 </body>

@@ -371,7 +371,7 @@ table {
   align-items: center;
 }
 
-#order-completed-dialog{
+#order-completed-dialog, #cart-dialog{
   outline: none;
   border: none;
   background-color: var(--white);
@@ -480,4 +480,103 @@ table {
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 0;
+}
+
+#cart-dialog{
+  width: 87%;
+}
+
+.cart-dialog-container{
+  padding: 32px 28px;
+  width: 100%;
+}
+
+.cart-dialog-container-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.cart-dialog-container-top h3{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  letter-spacing: 1.29px;
+  color: var(--black);
+}
+
+.cart-dialog-container-top button{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+  opacity: 0.5;
+}
+
+.cart-items{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-wrapper{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.cart-item .cart-item-wrapper img{
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+}
+
+.cart-item-wrapper-text h3{
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--black);
+}
+
+.cart-item-wrapper-text p{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--black);
+  opacity: 0.5;
+}
+
+.quantity-btn{
+  padding: 7px 11.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray);
+  gap: 12px;
+}
+
+.quantity-btn .minus-icon, .quantity-btn .plus-icon{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--black);
+  opacity: 0.25;
 }
