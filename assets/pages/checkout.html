@@ -4,11 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout Page</title>
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
   <div class="container-checkout">
     <div class="header">
-      <a href="/"><img src="" alt="Company Logo"></a>
+      <div class="hamburger-menu">
+        <a href=""><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="3" fill="white" />
+            <rect y="6" width="16" height="3" fill="white" />
+            <rect y="12" width="16" height="3" fill="white" />
+          </svg>
+        </a>
+      </div>
+      <a class="main-logo" href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
           <li>Home</li>
@@ -17,74 +26,176 @@
           <li>Earphones</li>
         </ul>
       </div>
-      <img src="" alt="Basket Icon">
+      <a class="cart-icon" href=""><img src="../shared/desktop/icon-cart.svg" alt="Cart Logo"></a>
     </div>
     <div class="product-detail">
-      <a href="#">Go Back</a>
+      <a href="#" class="go-back-btn">Go Back</a>
       <div class="section-checkout">
-        <h2>Checkout</h2>
+        <h2>CHECKOUT</h2>
         <div class="billing-details">
-          <h3>Name</h3>
-          <input type="text">
-          <h3>Email Address</h3>
-          <input type="email">
-          <h3>h3hone Number</p>
-          <input type="number">
+          <h3>BILLING DETAILS</h3>
+          <p>Name</p>
+          <input type="text" placeholder="Alexei Ward">
+          <p>Email Address</p>
+          <input type="email" placeholder="alexei@mail.com">
+          <p>Phone Number</p>
+          <input type="number" placeholder="+1 202-555-0136">
         </div>
         <div class="shipping-info">
-          <h3>Address</h3>
-          <input type="text">
-          <h3>Zip Code</h3>
-          <input type="number">
-          <h3>City</h3>
-          <input type="text">
-          <h3>Country</h3>
-          <input type="text">
+          <h3>SHIPPING INFO</h3>
+          <p>Address</p>
+          <input type="text" placeholder="1137 Williams Avenue">
+          <p>Zip Code</p>
+          <input type="number" placeholder="10001">
+          <p>City</p>
+          <input type="text" placeholder="New York">
+          <p>Country</p>
+          <input type="text" placeholder="United States">
         </div>
         <div class="payment-details">
-          <h3>Payment Method</h3>
-          <label><input type="checkbox" name="" id="">e-Money</label>
-          <label><input type="checkbox" name="" id="">Cash on Delivery</label>
-          <h3>e-Money Number</h3>
-          <input type="number">
-          <h3>e-Money Pin</h3>
-          <input type="number">
+          <h3>PAYMENT DETAILS</h3>
+          <p>Payment Method</p>
+          <label class="payment-details-radio-label" id="E-Money"><input class="payment-details-radio-input" type="radio" name="payment" id="E-Money"><span><span class="payment-checked"></span></span>e-Money</label>
+          <label class="payment-details-radio-label" id="Cash"><input class="payment-details-radio-input" type="radio" name="payment" id="Cash"><span><span class="payment-checked"></span></span>Cash on Delivery</label>
+          <div class="e-money-details">
+            <div class="e-money-details-item">
+              <p>e-Money Number</p>
+              <input type="number" placeholder="238521993">
+            </div>
+            <div class="e-money-details-item">
+              <p>e-Money Pin</p>
+              <input type="number" placeholder="6891">
+            </div>
+          </div>
         </div>
       </div>
       <div class="checkout-summary">
-        <div class="checkout-item">
-          <img src="" alt="">
-          <div class="checkout-product-detail">
-            <h3>XX99 MK II</h3>
-            <p>$ 2,999</p>
+        <h3>SUMMARY</h3>
+        <div class="checkout-item-container">
+          <div class="checkout-item">
+            <div class="checkout-item-wrapper">
+              <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
+              <div class="checkout-product-detail">
+                <h4>XX99 MK II</h4>
+                <p>$ 2,999</p>
+              </div>
+            </div>
+            <p class="quantity">x1</p>
           </div>
-          <p>x1</p>
         </div>
-        <p>Total : </p>
-        <p>Shipping : </p>
-        <p>VAT (included) : </p>
-        <p>Grand Total : </p>
-        <a href="#">Continue & Pay</a>
+        <div class="checkout-details">
+          <div class="checkout-details-item">
+            <p>TOTAL</p>
+            <p class="price">$ 5,396</p>
+          </div>
+          <div class="checkout-details-item">
+            <p>SHIPPING</p>
+            <p class="price">$ 5,396</p>
+          </div>
+          <div class="checkout-details-item">
+            <p>VAT (INCLUDED)</p>
+            <p class="price">$ 5,396</p>
+          </div>
+          <div class="checkout-details-item total">
+            <p>GRAND TOTAL</p>
+            <p class="price">$ 5,396</p>
+          </div>
+          <a href="#" class="btn">CONTINUE & PAY</a>
+        </div>
       </div>
     </div>
     <div class="footer">
-      <a href="/"><img src="" alt="Company Logo"></a>
+      <span></span>
+      <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
       <div class="navbar">
         <ul>
-          <li>Home</li>
-          <li>Headphones</li>
-          <li>Speakers</li>
-          <li>Earphones</li>
+          <li>HOME</li>
+          <li>HEADPHONES</li>
+          <li>SPEAKERS</li>
+          <li>EARPHONES</li>
         </ul>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quam.</p>
+      <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+      <p class="copyright">Copyright 2021. All Rights Reserved</p>
       <div class="social-media">
-        <a href="#"><img src="" alt="facebook icon"></a>
-        <a href="#"><img src="" alt="twitter icon"></a>
-        <a href="#"><img src="" alt="instagram icon"></a>
+        <a href="#"><img src="../shared/desktop/facebook.svg" alt="facebook icon"></a>
+        <a href="#"><img src="../shared/desktop/twitter.svg" alt="twitter icon"></a>
+        <a href="#"><img src="../shared/desktop/instagram.svg" alt="instagram icon"></a>
       </div>
-      <p>Copyright 2021</p>
     </div>
   </div>
+  <dialog id="order-completed-dialog">
+    <div class="order-completed-dialog-container">
+      <div class="check-icon">
+        <img src="../shared/desktop/check-icon.svg" alt="check icon">
+      </div>
+      <h3>THANK YOU <br> FOR YOUR ORDER</h3>
+      <p class="email-text">You will receive an email confirmation shortly.</p>
+      <div class="order-details">
+        <div class="order-details-top">
+          <div class="checkout-item">
+            <div class="checkout-item-wrapper">
+              <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
+              <div class="checkout-product-detail">
+                <h4>XX99 MK II</h4>
+                <p>$ 2,999</p>
+              </div>
+            </div>
+            <p class="quantity">x1</p>
+          </div>
+          <span class="divider"></span>
+          <p class="more-items">and <span>2</span> other item(s)</p>
+        </div>
+        <div class="order-details-total">
+          <p>GRAND TOTAL</p>
+          <p class="price">$ 5,446</p>
+        </div>
+      </div>
+      <a href="#" class="btn">BACK TO HOME</a>
+    </div>
+  </dialog>
+  <dialog id="cart-dialog">
+    <div class="cart-dialog-container">
+      <div class="cart-dialog-container-top">
+        <h3>CART(<span>3</span>)</h3>
+        <button>Remove all</button>
+      </div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="cart-item-wrapper">
+            <img src="../product-yx1-earphones/mobile/image-product.jpg">
+            <div class="cart-item-wrapper-text">
+              <h3>XX99 MK II</h3>
+              <p>$ 2,999</p>
+            </div>
+          </div>
+          <div class="quantity-btn">
+            <p class="minus-icon">-</p>
+            <p class="quantity">1</p>
+            <p class="plus-icon">+</p>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-wrapper">
+            <img src="../product-yx1-earphones/mobile/image-product.jpg">
+            <div class="cart-item-wrapper-text">
+              <h3>XX99 MK II</h3>
+              <p>$ 2,999</p>
+            </div>
+          </div>
+          <div class="quantity-btn">
+            <p class="minus-icon">-</p>
+            <p class="quantity">1</p>
+            <p class="plus-icon">+</p>
+          </div>
+        </div>
+      </div>
+      <div class="total-price">
+        <p>TOTAL</p>
+        <p class="price">$ 5,446</p>
+      </div>
+      <a href="#" class="btn">CHECKOUT</a>
+    </div>
+  </dialog>
 </body>
 </html>
