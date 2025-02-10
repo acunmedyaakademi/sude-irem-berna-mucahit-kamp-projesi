@@ -1,61 +1,330 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-:root{
-  --orange: #D87D4A;
+:root {
+  --orange: #d87d4a;
   --text-color: #101010;
-  --gray: #F1F1F1;
-  --light-gray: #FAFAFA;
-  --light-orange: #FBAF85;
-  --white: #FFFFFF;
+  --gray: #f1f1f1;
+  --light-gray: #fafafa;
+  --light-orange: #fbaf85;
+  --white: #ffffff;
   --black: #000000;
 }
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
   font-family: "Manrope", serif;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-*{
+* {
   box-sizing: border-box;
   font-family: "Manrope", serif;
 }
+
+/* PRODUCT-DETAIL MOBILE BASLANGICI -MUCAHIT*/
+
+.product-detail {
+  padding: 24px;
+}
+.product-detail a:first-child {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--black);
+  text-decoration: none;
+}
+.product-detail-item img {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.product-detail-text h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 10px;
+  color: var(--orange);
+  margin-bottom: 24px;
+}
+.product-detail-text h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 1px;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.product-detail-text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.product-detail-text h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  letter-spacing: 1.29px;
+  font-family: Manrope;
+  color: var(--black);
+  margin-bottom: 31px;
+}
+.product-detail-text__button {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 88px;
+}
+.product-detail-text__button p {
+  padding: 15px 30px;
+  background-color: var(--light-gray);
+}
+.product-detail-text__button a {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 15px 30px;
+  text-decoration: none;
+}
+.product-features h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.86px;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.product-features-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: var(--black);
+  margin-bottom: 88px;
+}
+.product-features-box {
+  margin-bottom: 88px;
+}
+.product-features-box h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.86px;
+  color: var(--black);
+}
+.product-features-box__item span {
+  display: flex;
+}
+.product-features-box__item span p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+.product-features-box__item span p:first-child {
+  color: var(--light-orange);
+  margin-right: 24px;
+}
+.product-detail-images img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .icategory-page-preview__mobile {
+    display: none;
+  }
+}
+/* PRODUCT-DETAIL MOBILE BITISI -MUCAHIT*/
+
+/* PRODUCT-DETAIL TABLET BASLANGICI -MUCAHIT*/
+@media only screen and (min-width: 768px) {
+  .product-detail {
+    padding: 39px;
+  }
+  .icategory-page-preview__mobile {
+    display: none;
+  }
+  .product-detail-item img {
+    width: 281px;
+    height: 480px;
+  }
+  .product-detail-item {
+    display: flex;
+  }
+  .product-detail-item img {
+    margin-bottom: 120px;
+  }
+  .product-detail-text {
+    margin-top: 45px;
+    margin-left: 69px;
+  }
+  .product-detail-text h4 {
+    font-size: 12px;
+    line-height: 16.39px;
+    letter-spacing: 8.57px;
+    margin-bottom: 17px;
+  }
+  .product-detail-text p {
+    margin-bottom: 32px;
+  }
+  .product-detail-text h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 1.29px;
+    font-family: Manrope;
+    color: var(--black);
+    margin-bottom: 31px;
+  }
+  .product-detail-text__button {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 88px;
+  }
+  .product-features-box h2 {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+  }
+  .product-features-box {
+    display: flex;
+		justify-content: stretch;
+  }
+	.product-detail-images img {
+		display: flex;
+	}
+}
+
+/* PRODUCT-DETAIL TABLET BITISI -MUCAHIT*/
+
+/* PRODUCT-DETAIL DESKTOP BASLANGICI -MUCAHIT*/
+
+/* PRODUCT-DETAIL DESTKOP BASLANGICI -MUCAHIT*/
