@@ -1082,6 +1082,11 @@ table {
   cursor: pointer;
 }
 
+.footer .navbar ul li a{
+  text-decoration: none;
+  color: var(--white);
+}
+
 .footer p {
   font-weight: 400;
   font-size: 15px;
