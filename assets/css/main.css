@@ -431,14 +431,7 @@ table {
   letter-spacing: 2px;
   color: #000000;
   margin-top: 101px;
-  margin-bottom: 32px
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 38.25px;
-  letter-spacing: 2px;
-  color: #000000;
-  margin-top: 101px;
-  margin-bottom: 32px
+  margin-bottom: 32px;
 }
 
 .product-zx7-text a {
@@ -837,7 +830,6 @@ table {
 }
 
 .product-detail .go-back-btn {
-.product-detail .go-back-btn {
   display: block;
   text-decoration: none;
   margin-bottom: 24px;
@@ -857,7 +849,6 @@ table {
   margin-bottom: 32px;
 }
 
-.section-checkout h2 {
 .section-checkout h2 {
   font-weight: 700;
   font-size: 28px;
@@ -892,9 +883,6 @@ table {
 .billing-details p,
 .shipping-info p,
 .payment-details p {
-.billing-details p,
-.shipping-info p,
-.payment-details p {
   font-weight: 700;
   font-size: 12px;
   line-height: 16.39px;
@@ -903,9 +891,6 @@ table {
   margin-bottom: 9px;
 }
 
-.billing-details input,
-.shipping-info input,
-.e-money-details-item input {
 .billing-details input,
 .shipping-info input,
 .e-money-details-item input {
@@ -924,18 +909,13 @@ table {
 .billing-details input::placeholder,
 .shipping-info input::placeholder,
 .e-money-details-item input::placeholder {
-.billing-details input::placeholder,
-.shipping-info input::placeholder,
-.e-money-details-item input::placeholder {
   color: #999999;
 }
 
 .payment-details-radio-input {
-.payment-details-radio-input {
   display: none;
 }
 
-.payment-details-radio-label {
 .payment-details-radio-label {
   display: flex;
   align-items: center;
@@ -953,7 +933,6 @@ table {
 }
 
 .payment-details-radio-label span {
-.payment-details-radio-label span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -964,7 +943,6 @@ table {
 }
 
 .payment-details-radio-label .payment-checked {
-.payment-details-radio-label .payment-checked {
   display: none;
   width: 10px;
   height: 10px;
@@ -974,11 +952,9 @@ table {
 }
 
 .payment-details-radio-label:has(input:checked) {
-.payment-details-radio-label:has(input:checked) {
   border-color: var(--orange);
 }
 
-.payment-details-radio-label:has(input:checked) .payment-checked {
 .payment-details-radio-label:has(input:checked) .payment-checked {
   display: block;
 }
@@ -1059,7 +1035,6 @@ table {
 }
 
 .checkout-summary h3 {
-.checkout-summary h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 24.59px;
@@ -1069,7 +1044,6 @@ table {
 }
 
 .checkout-item-container {
-.checkout-item-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1077,13 +1051,11 @@ table {
 }
 
 .checkout-item {
-.checkout-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.checkout-item-wrapper {
 .checkout-item-wrapper {
   display: flex;
   align-items: center;
