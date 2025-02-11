@@ -1121,7 +1121,7 @@ table {
 }
 
 
-#order-completed-dialog,
+#orderCompletedDialog,
 #cart-dialog {
   outline: none;
   border: none;
@@ -1129,6 +1129,12 @@ table {
   border-radius: 8px;
   margin-inline: 24px;
   padding: 0;
+}
+
+#orderCompletedDialog::backdrop,
+#cart-dialog::backdrop{
+  background-color: var(--black);
+  opacity: 0.4;
 }
 
 .order-completed-dialog-container {
@@ -1793,7 +1799,7 @@ table {
   .footer-navbar-container{
     margin-top: 0;
   }
-  #order-completed-dialog, #cart-dialog{
+  #orderCompletedDialog, #cart-dialog{
     margin-inline: auto;
   }
   .order-completed-dialog-container{
