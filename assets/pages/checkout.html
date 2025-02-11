@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout Page</title>
   <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/checkout.js" defer></script>
 </head>
 <body>
   <div class="container-checkout">
@@ -103,25 +104,11 @@
             <div class="payment-details-radio-container">
               <p>Payment Method</p>
               <div class="payment-details-radio-btns">
-                <label class="payment-details-radio-label" id="E-Money"><input class="payment-details-radio-input" type="radio" name="payment" id="E-Money"><span><span class="payment-checked"></span></span>e-Money</label>
-                <label class="payment-details-radio-label" id="Cash"><input class="payment-details-radio-input" type="radio" name="payment" id="Cash"><span><span class="payment-checked"></span></span>Cash on Delivery</label>
+                <label class="payment-details-radio-label" id="eMoney"><input class="payment-details-radio-input" type="radio" name="payment" id="eMoney"><span><span class="payment-checked"></span></span>e-Money</label>
+                <label class="payment-details-radio-label" id="cash"><input class="payment-details-radio-input" type="radio" name="payment" id="cash"><span><span class="payment-checked"></span></span>Cash on Delivery</label>
               </div>
             </div>
             <div class="payment-method">
-              <!-- <div class="e-money-details">
-                <div class="e-money-details-item">
-                  <p>e-Money Number</p>
-                  <input type="number" placeholder="238521993">
-                </div>
-                <div class="e-money-details-item">
-                  <p>e-Money Pin</p>
-                  <input type="number" placeholder="6891">
-                </div>
-              </div> -->
-              <!-- <div class="cash-on-delivery">
-                <img src="../shared/desktop/delivery-icon.svg">
-                <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
-              </div> -->
             </div>
           </div>
         </div>
@@ -156,7 +143,7 @@
               <p>GRAND TOTAL</p>
               <p class="price">$ 5,396</p>
             </div>
-            <a href="#" class="btn">CONTINUE & PAY</a>
+            <a href="#" class="btn" id="payBtn">CONTINUE & PAY</a>
           </div>
         </div>
       </div>
