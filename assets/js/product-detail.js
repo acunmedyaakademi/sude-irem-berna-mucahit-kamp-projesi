@@ -136,9 +136,11 @@ function renderProduct(product) {
       ${product.others.map(x =>
         `
             <div class="product-also-like-item">
-              <img src="..${x.image.desktop}" alt="">
+              <img class="alsolike-img__mobile" src="..${x.image.mobile}" alt="">
+              <img class="alsolike-tablet"  src="..${x.image.tablet}" alt="">
+              <img class="alsolike-desktop" src="..${x.image.desktop}" alt="">
               <h3>${x.name}</h3>
-              <a id="productBtn" href="product-detail.html#/${x.slug}">See Product</a>
+              <a id="productBtn" href="product-detail.html#/${x.slug}">SEE PRODUCT</a>
             </div>
         `
         )
