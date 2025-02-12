@@ -1235,7 +1235,7 @@ table {
 
 
 #orderCompletedDialog,
-#cart-dialog {
+#cartDialog {
   outline: none;
   border: none;
   background-color: var(--white);
@@ -1245,7 +1245,7 @@ table {
 }
 
 #orderCompletedDialog::backdrop,
-#cart-dialog::backdrop{
+#cartDialog::backdrop{
   background-color: var(--black);
   opacity: 0.4;
 }
@@ -1358,7 +1358,7 @@ table {
   margin-bottom: 0;
 }
 
-#cart-dialog {
+#cartDialog {
   width: 87%;
 }
 
@@ -1911,7 +1911,7 @@ table {
   .footer-navbar-container{
     margin-top: 0;
   }
-  #orderCompletedDialog, #cart-dialog{
+  #orderCompletedDialog, #cartDialog{
     margin-inline: auto;
   }
   .order-completed-dialog-container{
@@ -1948,7 +1948,7 @@ table {
     flex-direction: column;
     justify-content: end;
   }
-  #cart-dialog{
+  #cartDialog{
     width: 377px;
   }
   .cart-dialog-container{

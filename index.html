@@ -14,7 +14,7 @@
     <div class="header-container">
       <div class="header">
         <div class="hamburger-menu">
-          <a href=""><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="" id="hamburgerMenuBtn"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="16" height="3" fill="white" />
               <rect y="6" width="16" height="3" fill="white" />
               <rect y="12" width="16" height="3" fill="white" />
@@ -30,7 +30,7 @@
             <li><a href="/assets/pages/earphones.html">Earphones</a></li>
           </ul>
         </div>
-        <a class="cart-icon" href=""><img src="../shared/desktop/icon-cart.svg" alt="Cart Logo"></a>
+        <a class="cart-icon" href="#"><img src="./assets/shared/desktop/icon-cart.svg" alt="Cart Logo"></a>
       </div>
     </div>
     <div class="hero">
@@ -40,25 +40,10 @@
           HeadphoneS</h1>
           <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
       </div>
-      <button id="seeProductBtn" class="see-products-btn">SEE PRODUCT</button>
+      <a href="assets/pages/product-detail.html#/xx99-mark-two-headphones" id="seeProductBtn" class="see-products-btn">SEE PRODUCT</a>
       <!-- <img class="hero-img" src="assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg" alt="Hero Img"> -->
     </div>
     <div class="categories">
-      <div class="category-item">
-        <img class="category-img" src="" alt="Headphones Img">
-        <h3>Headphones</h3>
-        <a id="headphones-pages" href="./assets/pages/headphones.html">Shop <img src="/assets/home/mobile/right.svg" alt=""></a>
-      </div>
-      <div class="category-item">
-        <img class="category-img" src="" alt="Speakers Img">
-        <h3>Speakers</h3>
-        <a id="speakers-pages" href="./assets/pages/speakers.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
-      </div>
-      <div class="category-item">
-        <img class="category-img" src="" alt="Earphones Img">
-        <h3>Earphones</h3>
-        <a id="earphones-pages" href="./assets/pages/earphones.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
-      </div>
     </div>
     <div class="products">
       <div class="product-zx9">
@@ -124,48 +109,9 @@
       </div>
     </div>
   </div>
-  <dialog id="cart-dialog">
-    <div class="cart-dialog-container">
-      <div class="cart-dialog-container-top">
-        <h3>CART(<span>3</span>)</h3>
-        <button>Remove all</button>
-      </div>
-      <div class="cart-items">
-        <div class="cart-item">
-          <div class="cart-item-wrapper">
-            <img src="assets/product-yx1-earphones/mobile/image-product.jpg">
-            <div class="cart-item-wrapper-text">
-              <h3>XX99 MK II</h3>
-              <p>$ 2,999</p>
-            </div>
-          </div>
-          <div class="quantity-btn">
-            <p class="minus-icon">-</p>
-            <p class="quantity">1</p>
-            <p class="plus-icon">+</p>
-          </div>
-        </div>
-        <div class="cart-item">
-          <div class="cart-item-wrapper">
-            <img src="assets/product-yx1-earphones/mobile/image-product.jpg">
-            <div class="cart-item-wrapper-text">
-              <h3>XX99 MK II</h3>
-              <p>$ 2,999</p>
-            </div>
-          </div>
-          <div class="quantity-btn">
-            <p class="minus-icon">-</p>
-            <p class="quantity">1</p>
-            <p class="plus-icon">+</p>
-          </div>
-        </div>
-      </div>
-      <div class="total-price">
-        <p>TOTAL</p>
-        <p class="price">$ 5,446</p>
-      </div>
-      <a href="#" class="btn">CHECKOUT</a>
-    </div>
+  <dialog id="cartDialog">
+  </dialog>
+  <dialog id="hamburgerMenu">
   </dialog>
 </body>
 
