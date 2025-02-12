@@ -22,10 +22,10 @@
         <a class="main-logo" href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
         <div class="navbar">
           <ul>
-            <li>Home</li>
-            <li>Headphones</li>
-            <li>Speakers</li>
-            <li>Earphones</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/assets/pages/headphones.html">Headphones</a></li>
+            <li><a href="/assets/pages/speakers.html">Speakers</a></li>
+            <li><a href="/assets/pages/earphones.html">Earphones</a></li>
           </ul>
         </div>
         <a class="cart-icon" href=""><img src="../shared/desktop/icon-cart.svg" alt="Cart Logo"></a>
@@ -40,54 +40,54 @@
             <h3>BILLING DETAILS</h3>
             <div class="billing-details-inputs-container">
               <div class="billing-details-inputs-container-wrapper">
-                <div class="billing-details-input">
+                <div class="billing-details-input name-input">
                   <div class="billing-details-input-text">
                     <p>Name</p>
                     <p class="error-text">Can't be empty.</p>
                   </div>
-                  <input type="text" placeholder="Alexei Ward">
+                  <input class="checkout-input" data-input="name-input" type="text" placeholder="Alexei Ward">
                 </div>
-                <div class="billing-details-input">
+                <div class="billing-details-input email-input">
                   <div class="billing-details-input-text">
                     <p>Email Address</p>
-                    <p class="error-text">Can't be empty.</p>
+                    <p class="error-text email-error-text">Can't be empty.</p>
                   </div>
-                  <input type="email" placeholder="alexei@mail.com">
+                  <input class="checkout-input" data-input="email-input" type="email" placeholder="alexei@mail.com">
                 </div>
               </div>
-              <div class="billing-details-input">
+              <div class="billing-details-input number-input">
                 <div class="billing-details-input-text">
                   <p>Phone Number</p>
                   <p class="error-text">Can't be empty.</p>
                 </div>
-                <input type="number" placeholder="+1 202-555-0136">
+                <input class="checkout-input" data-input="number-input" type="number" placeholder="+1 202-555-0136">
               </div>
             </div>
           </div>
           <div class="shipping-info">
             <h3>SHIPPING INFO</h3>
             <div class="shipping-info-inputs-container">
-              <div class="shipping-info-input">
+              <div class="shipping-info-input address-input">
                 <div class="shipping-info-input-text">
                   <p>Address</p>
                   <p class="error-text">Can't be empty.</p>
                 </div>
-                <input type="text" placeholder="1137 Williams Avenue">
+                <input class="checkout-input" data-input="address-input" type="text" placeholder="1137 Williams Avenue">
               </div>
               <div class="shipping-info-inputs-container-wrapper">
-                <div class="shipping-info-input">
+                <div class="shipping-info-input zip-input">
                   <div class="shipping-info-input-text">
                     <p>Zip Code</p>
                     <p class="error-text">Can't be empty.</p>
                   </div>
-                  <input type="number" placeholder="10001">
+                  <input class="checkout-input" data-input="zip-input" type="number" placeholder="10001">
                 </div>
-                <div class="shipping-info-input">
+                <div class="shipping-info-input city-input">
                   <div class="shipping-info-input-text">
                     <p>City</p>
                     <p class="error-text">Can't be empty.</p>
                   </div>
-                  <input type="text" placeholder="New York">
+                  <input class="checkout-input" data-input="city-input" type="text" placeholder="New York">
                 </div>
               </div>
               <div class="shipping-info-input country-input">
@@ -95,7 +95,7 @@
                   <p>Country</p>
                   <p class="error-text">Can't be empty.</p>
                 </div>
-                <input type="text" placeholder="United States">
+                <input class="checkout-input" data-input="country-input" type="text" placeholder="United States">
               </div>
             </div>
           </div>
@@ -115,35 +115,8 @@
         <div class="checkout-summary">
           <h3>SUMMARY</h3>
           <div class="checkout-item-container">
-            <div class="checkout-item">
-              <div class="checkout-item-wrapper">
-                <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
-                <div class="checkout-product-detail">
-                  <h4>XX99 MK II</h4>
-                  <p>$ 2,999</p>
-                </div>
-              </div>
-              <p class="quantity">x1</p>
-            </div>
           </div>
           <div class="checkout-details">
-            <div class="checkout-details-item">
-              <p>TOTAL</p>
-              <p class="price">$ 5,396</p>
-            </div>
-            <div class="checkout-details-item">
-              <p>SHIPPING</p>
-              <p class="price">$ 5,396</p>
-            </div>
-            <div class="checkout-details-item">
-              <p>VAT (INCLUDED)</p>
-              <p class="price">$ 5,396</p>
-            </div>
-            <div class="checkout-details-item total">
-              <p>GRAND TOTAL</p>
-              <p class="price">$ 5,396</p>
-            </div>
-            <a href="#" class="btn" id="payBtn">CONTINUE & PAY</a>
           </div>
         </div>
       </div>
@@ -155,10 +128,10 @@
           <a href="/"><img src="../shared/desktop/logo.svg" alt="Company Logo"></a>
           <div class="navbar">
             <ul>
-              <li>HOME</li>
-              <li>HEADPHONES</li>
-              <li>SPEAKERS</li>
-              <li>EARPHONES</li>
+              <li><a href="../../index.html">HOME</a></li>
+              <li><a href="headphones.html">HEADPHONES</a></li>
+              <li><a href="speakers.html">SPEAKERS</a></li>
+              <li><a href="earphones.html">EARPHONES</a></li>
             </ul>
           </div>
         </div>
@@ -181,7 +154,7 @@
       </div>
     </div>
   </div>
-  <dialog id="order-completed-dialog">
+  <dialog id="orderCompletedDialog">
     <div class="order-completed-dialog-container">
       <div class="check-icon">
         <img src="../shared/desktop/check-icon.svg" alt="check icon">
@@ -190,37 +163,11 @@
       <p class="email-text">You will receive an email confirmation shortly.</p>
       <div class="order-details">
         <div class="order-details-top">
-          <div class="checkout-items">
-            <div class="checkout-item">
-              <div class="checkout-item-wrapper">
-                <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
-                <div class="checkout-product-detail">
-                  <h4>XX99 MK II</h4>
-                  <p>$ 2,999</p>
-                </div>
-              </div>
-              <p class="quantity">x1</p>
-            </div>
-            <div class="checkout-item">
-              <div class="checkout-item-wrapper">
-                <img src="../product-yx1-earphones/mobile/image-product.jpg" alt="">
-                <div class="checkout-product-detail">
-                  <h4>XX99 MK II</h4>
-                  <p>$ 2,999</p>
-                </div>
-              </div>
-              <p class="quantity">x1</p>
-            </div>
-          </div>
-          <span class="divider"></span>
-          <p class="more-items">and <span>2</span> other item(s)</p>
         </div>
         <div class="order-details-total">
-          <p>GRAND TOTAL</p>
-          <p class="price">$ 5,446</p>
         </div>
       </div>
-      <a href="#" class="btn">BACK TO HOME</a>
+      <a href="../../index.html" class="btn" id="backToHomeBtn">BACK TO HOME</a>
     </div>
   </dialog>
   <dialog id="cart-dialog">
