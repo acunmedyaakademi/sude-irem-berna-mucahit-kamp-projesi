@@ -1,6 +1,9 @@
 async function getData() {
   const data = await fetch('../../data.json').then(r => r.json());
   renderCategories(data);
+  const product = location.href.split("#")[1].slice(1);
+  const selectedProduct = data.find(x => x.slug === product);
+  renderProduct(selectedProduct);
 }
 
 function renderCategories(categories){
@@ -21,5 +24,9 @@ function renderCategories(categories){
   )
 }
 
-getData();
+function renderProduct(product){
 
+}
+
+
+getData();
