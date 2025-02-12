@@ -1841,10 +1841,6 @@ table {
 
 @media only screen and (min-width: 1280px) {
   /* irem section desktop */
-  .container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
 
   .hero {
     background-image: url('/assets/home/desktop/image-hero.jpg');
