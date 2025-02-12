@@ -15,6 +15,11 @@ function init(){
     }
   });
   hamburgerMenuBtn.addEventListener('click', showHamburgerMenu);
+  hamburgerMenu.addEventListener('click', (e) => {
+    if (!document.querySelector('.hamburgermenu-container').contains(e.target)) {
+      hamburgerMenu.close();
+    }
+  });
 }
 
 function handleClickDetail() {
@@ -38,18 +43,18 @@ function renderCategories(categories){
     `
       <div class="category-item">
         <img class="category-img" src="./assets${x.categoryImage.svg}" alt="Speakers Img">
-        <h3>${x.category}</h3>
+        <h3>${x.category.toUpperCase()}</h3>
         <a id="speakers-pages" href="./assets/pages/${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
       </div>
     `
-  );
+  ).join('');
   hamburgerMenu.innerHTML = `
   <div class="hamburgermenu-container">
     ${categoryItems.map(x => 
       `
         <div class="category-item">
           <img class="category-img" src="./assets${x.categoryImage.svg}" alt="Speakers Img">
-          <h3>${x.category}</h3>
+          <h3>${x.category.toUpperCase()}</h3>
           <a id="speakers-pages" href="./assets/pages/${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
         </div>
       `
@@ -82,7 +87,7 @@ function renderCart(){
         ${cart.map(x => `
             <div class="cart-item">
               <div class="cart-item-wrapper">
-                <img src="..${x.image}">
+                <img src="./assets${x.image}">
                 <div class="cart-item-wrapper-text">
                   <h3>${(x.name)}</h3>
                   <p>$ ${(x.price) }</p>
