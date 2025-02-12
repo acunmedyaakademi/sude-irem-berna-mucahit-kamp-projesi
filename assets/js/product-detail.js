@@ -69,32 +69,32 @@ function renderProduct(product) {
               <span id="quantityBtn">1</span>
               <button id="increaseBtn">+</button>
           </div>
-            <a id="addToCartBtn" class="btn" href="#">Add to cart</a>
+            <a id="addToCartBtn" class="btn" href="#">ADD TO CART</a>
           </div>
   `;
 
-  increaseBtn.addEventListener('click', () => {
-   let newQuantity = Number(quantityBtn.innerText) + 1;
-   quantityBtn.innerText = newQuantity;
+  increaseBtn.addEventListener("click", () => {
+    let newQuantity = Number(quantityBtn.innerText) + 1;
+    quantityBtn.innerText = newQuantity;
   });
 
-  decreaseBtn.addEventListener('click', () => {
-    if(Number(quantityBtn.innerText) !== 1) {
+  decreaseBtn.addEventListener("click", () => {
+    if (Number(quantityBtn.innerText) !== 1) {
       let newQuantity = Number(quantityBtn.innerText) - 1;
       quantityBtn.innerText = newQuantity;
     }
-  })
-  
-  addToCartBtn.addEventListener("click", (e) => addToCart(e, product));
+  });
 
-  
+  addToCartBtn.addEventListener("click", (e) => addToCart(e, product));
 
   const productFeatures = document.querySelector(".product-features");
   productFeatures.innerHTML = `
+        <div class="product-features-text">
         <h2>Features</h2>
         <p class="product-features-text">
         ${product.features}
         </p>
+        </div>
         <div class="product-features-box">
           <h2>In the box</h2>
           <div class="product-features-box__item">
@@ -108,25 +108,29 @@ function renderProduct(product) {
   const productDetailImages = document.querySelector(".product-detail-images");
   productDetailImages.innerHTML = product.gallery.map(
     (x) => `
-  <img  src="..${x.desktop}" alt="1x">
+  <img class="detail-images-grid" src="..${x.desktop}" alt="1x">
   `
-  );
+  ).join('');
 
   const productAlsoLike = document.querySelector(".product-also-like");
-  productAlsoLike.innerHTML = product.others.map(
-    (x) => `
+  productAlsoLike.innerHTML = `
+   <h3>YOU MAY ALSO LIKE</h3>
+  ${product.others
+    .map(
+      (x) => `
+           
      <div class="product-also-like-item">
           <img src="..${x.image.desktop}" alt="">
           <h3>${x.name}</h3>
           <a id="productBtn" href="product-detail.html#/${x.slug}">See Product</a>
         </div>
     `
-  ).join('');
+    )
+    .join("")}`
   window.addEventListener("hashchange", function () {
     location.reload();
     window.scrollTo(0, 0);
   });
-  
 }
 
 function addToCart(e, product) {
