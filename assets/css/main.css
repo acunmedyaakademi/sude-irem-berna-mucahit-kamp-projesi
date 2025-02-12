@@ -1540,6 +1540,24 @@ table {
 
 /* sude end */
 
+#hamburgerMenu {
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 68px; 
+  left: 0;
+  border: none;
+
+  .category-item {
+    height: 165px;
+  }
+  .category-item h3 {
+      padding-top: 88px;
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .icategory-page-preview__mobile {
     display: none;
@@ -1971,14 +1989,46 @@ table {
     padding: 32px;
   }
   /* sude end */
+
+  #hamburgerMenu {
+    border: none;
+    position: absolute;
+    top: 68px; 
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    .category-item {
+      height: 165px;
+      width: 223px;
+      margin-top: 56px;
+    }
+    .category-item h3 {
+        padding-top: 0px;
+    }
+  }
+
+  .hamburgermenu-container {
+    width: 100%;
+    height: 340px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #hamburgerMenu::backdrop {
+    background-color: var(--black);
+    opacity: 0.4;
+  }
 }
+
 
 @media only screen and (min-width: 1280px) {
   /* irem section desktop */
-  .container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
 
   .hero {
     background-image: url("/assets/home/desktop/image-hero.jpg");

@@ -43,15 +43,19 @@ function renderCategories(categories){
       </div>
     `
   );
-  hamburgerMenu.innerHTML = categoryItems.map(x => 
-    `
-      <div class="category-item">
-        <img class="category-img" src="./assets${x.categoryImage.svg}" alt="Speakers Img">
-        <h3>${x.category}</h3>
-        <a id="speakers-pages" href="./assets/pages/${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
-      </div>
-    `
-  );
+  hamburgerMenu.innerHTML = `
+  <div class="hamburgermenu-container">
+    ${categoryItems.map(x => 
+      `
+        <div class="category-item">
+          <img class="category-img" src="./assets${x.categoryImage.svg}" alt="Speakers Img">
+          <h3>${x.category}</h3>
+          <a id="speakers-pages" href="./assets/pages/${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
+        </div>
+      `
+    ).join("")}
+  </div>
+  `
 }
 
 function showCart(e){

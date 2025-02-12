@@ -269,7 +269,7 @@ function renderCategories(categories){
         <a id="speakers-pages" href="./${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
       </div>
     `
-  );
+  ).join("");
 }
 
 function showHamburgerMenu(e){
