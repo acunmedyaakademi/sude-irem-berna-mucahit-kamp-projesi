@@ -26,7 +26,24 @@ function renderCategories(categories){
 
 function renderProduct(product){
 
+  addToCart(e, product);
 }
 
+function addToCart(e, product){
+  e.preventDefault();
+  let cart = JSON.parse(localStorage.cart) || [];
+  const selectedProductIndex = cart.findIndex(x => x.id === product.id);
+  if(selectedProductIndex === -1){
+    cart.push({
+      name: product.name,
+      image: product.image.desktop,
+      price: product.price,
+      quantity: 1
+    });
+  } else{
+    cart[selectedProductIndex].quantity = cart[selectedProductIndex].quantity + 1;
+  }
+  localStorage.cart = JSON.stringify(cart);
+}
 
 getData();
