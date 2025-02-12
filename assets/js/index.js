@@ -105,7 +105,7 @@ function renderCart(){
         <p>TOTAL</p>
         <p class="price">$ ${totalPrice}</p>
       </div>
-      <a href="checkout.html" class="btn">CHECKOUT</a>
+      <a href="assets/pages/checkout.html" class="btn">CHECKOUT</a>
     </div>
   `
   const minusIcons = document.querySelectorAll('.minus-icon');

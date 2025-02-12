@@ -762,7 +762,7 @@ table {
   width: inherit;
   padding: 15px 30.5px 15px 34.5px;
 }
-.quantity {
+.product-detail-text__button .quantity {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -770,7 +770,7 @@ table {
   background-color: var(--light-gray);
   gap: 20px;
 }
-.quantity button {
+.product-detail-text__button .quantity button {
   border: none;
   background-color: var(--gray);
   font-weight: 700;
