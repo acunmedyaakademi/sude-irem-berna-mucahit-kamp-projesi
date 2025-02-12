@@ -911,6 +911,10 @@ table {
   cursor: pointer;
 }
 
+.container-checkout{
+  background-color: var(--gray);
+}
+
 .section-checkout {
   background-color: var(--white);
   padding: 24px 24px 31px;
@@ -1948,6 +1952,9 @@ table {
   .billing-details-inputs-container-wrapper input {
     width: 100%;
   }
+  .billing-details-input.error:last-child, .shipping-info-input.country-input.error .shipping-info-input-text{
+    width: 48%;
+  }
   .shipping-info {
     margin-bottom: 61px;
   }
@@ -2047,6 +2054,7 @@ table {
     padding: 32px;
     right: 40px;
     margin: 0;
+    width: 377px;
   }
   /* sude end */
 

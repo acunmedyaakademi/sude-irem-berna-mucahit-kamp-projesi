@@ -74,7 +74,7 @@ function renderProduct(product) {
           ${product.isNew ? " <h4>New Product</h4> " : ""}
           <h3>${product.name}</h3>
           <p>${product.description}</p>
-          <h5>$ ${product.price}</h5>
+          <h5>$ ${product.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}</h5>
           <div class="product-detail-text__button">
             <div class="quantity">
               <button id="decreaseBtn">−</button>
@@ -202,7 +202,7 @@ function renderCart() {
                 <img src="..${x.image}">
                 <div class="cart-item-wrapper-text">
                   <h3>${x.name}</h3>
-                  <p>$ ${x.price}</p>
+                  <p>$ ${x.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}</p>
                 </div>
               </div>
               <div class="quantity-btn">
@@ -216,7 +216,7 @@ function renderCart() {
       </div>
       <div class="total-price">
         <p>TOTAL</p>
-        <p class="price">$ ${totalPrice}</p>
+        <p class="price">$ ${totalPrice.toLocaleString("en-US", { maximumFractionDigits: 0 })}</p>
       </div>
       <a href="checkout.html" class="btn">CHECKOUT</a>
     </div>

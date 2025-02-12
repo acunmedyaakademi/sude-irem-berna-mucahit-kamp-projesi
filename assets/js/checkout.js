@@ -44,7 +44,7 @@ function renderSummary(){
                 <div class="checkout-item-wrapper">
                   <img src="..${x.image}">
                   <div class="checkout-product-detail">
-                    <h4>${x.name}</h4>
+                    <h4>${x.name.split(" ").slice(0, -1).join(" ")}</h4>
                     <p>$${x.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}</p>
                   </div>
                 </div>
@@ -207,8 +207,8 @@ function renderCart(){
               <div class="cart-item-wrapper">
                 <img src="..${x.image}">
                 <div class="cart-item-wrapper-text">
-                  <h3>${(x.name)}</h3>
-                  <p>$ ${(x.price) }</p>
+                  <h3>${x.name.split(" ").slice(0, -1).join(" ")}</h3>
+                  <p>$ ${x.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}</p>
                 </div>
               </div>
               <div class="quantity-btn">
@@ -221,7 +221,7 @@ function renderCart(){
       </div>
       <div class="total-price">
         <p>TOTAL</p>
-        <p class="price">$ ${totalPrice}</p>
+        <p class="price">$ ${totalPrice.toLocaleString("en-US", { maximumFractionDigits: 0 })}</p>
       </div>
       <a href="checkout.html" class="btn">CHECKOUT</a>
     </div>

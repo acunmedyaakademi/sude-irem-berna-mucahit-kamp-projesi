@@ -122,7 +122,7 @@ function renderCart(){
                 <img src="..${x.image}">
                 <div class="cart-item-wrapper-text">
                   <h3>${(x.name)}</h3>
-                  <p>$ ${(x.price) }</p>
+                  <p>$ ${x.price.toLocaleString("en-US", { maximumFractionDigits: 0 })}</p>
                 </div>
               </div>
               <div class="quantity-btn">
@@ -135,7 +135,7 @@ function renderCart(){
       </div>
       <div class="total-price">
         <p>TOTAL</p>
-        <p class="price">$ ${totalPrice}</p>
+        <p class="price">$ ${totalPrice.toLocaleString("en-US", { maximumFractionDigits: 0 })}</p>
       </div>
       <a href="checkout.html" class="btn">CHECKOUT</a>
     </div>
