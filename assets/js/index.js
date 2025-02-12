@@ -1,30 +1,3 @@
-// const headphonespages = document.querySelector("#headphones-pages");
-// const speakerspages = document.querySelector("#speakers-pages");
-// const earphonespages = document.querySelector("#earphones-pages");
-
-// if (headphonespages) {
-//     headphonespages.addEventListener("click", function () {
-//       console.log("Headphones link tıklandı"); 
-//         window.location.href = "/assets/pages/headphones.html";
-//     });
-// }
-
-// if (speakerspages) {
-//     speakerspages.addEventListener("click", function () {
-//       console.log("speakers link tıklandı"); 
-//         window.location.href = "/assets/pages/speakers.html";
-//     });
-// }
-
-// if (earphonespages) {
-//     earphonespages.addEventListener("click", function () {
-//       console.log("earphones link tıklandı"); 
-//         window.location.href = "/assets/pages/earphones.html";
-//     });
-// }
-
-
-
 
 const productDetail = document.querySelector('#seeProductBtn');
 
@@ -34,6 +7,31 @@ function handleClickDetail() {
   window.location.href = "./assets/pages/product-detail.html"
 }
 
+async function getData() {
+  const data = await fetch('data.json').then(r => r.json())
+  renderCategories(data);
+}
+
+function renderCategories(categories){
+  const categoriesContainer = document.querySelector('.categories');
+  const categoryNames = new Set(categories.map(x => x.category));
+  let categoryItems = [];
+  for (const x of categoryNames) {
+    categoryItems.push(categories.find(category => category.category === x));
+  }
+  console.log(categoryItems);
+  categoriesContainer.innerHTML = categoryItems.map(x => 
+    `
+      <div class="category-item">
+        <img class="category-img" src="./assets${x.categoryImage.svg}" alt="Speakers Img">
+        <h3>${x.category}</h3>
+        <a id="speakers-pages" href="./assets/pages/${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
+      </div>
+    `
+  )
+}
+
+getData();
 
 
 

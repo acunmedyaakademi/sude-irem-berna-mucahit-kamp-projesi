@@ -12,7 +12,8 @@
     "categoryImage": {
       "mobile": "/product-yx1-earphones/mobile/image-category-page-preview.jpg",
       "tablet": "/product-yx1-earphones/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+      "desktop": "/product-yx1-earphones/desktop/image-category-page-preview.jpg",
+      "svg": "/shared/desktop/category-earphone.svg"
     },
     "isNew": true,
     "price": 599,
@@ -100,7 +101,8 @@
     "categoryImage": {
       "mobile": "/product-xx59-headphones/mobile/image-category-page-preview.jpg",
       "tablet": "/product-xx59-headphones/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+      "desktop": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+      "svg": "/shared/desktop/category-headphone.svg"
     },
     "isNew": false,
     "price": 899,
@@ -356,7 +358,8 @@
     "categoryImage": {
       "mobile": "/product-zx7-speaker/mobile/image-category-page-preview.jpg",
       "tablet": "/product-zx7-speaker/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-zx7-speaker/desktop/image-category-page-preview.jpg"
+      "desktop": "/product-zx7-speaker/desktop/image-category-page-preview.jpg",
+      "svg": "/shared/desktop/category-speaker.svg"
     },
     "isNew": false,
     "price": 3500,
