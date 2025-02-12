@@ -134,7 +134,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -151,7 +151,7 @@ table {
 /* irem section */
 
 .hero {
-  background-image: url('/assets/home/mobile/image-header.jpg');
+  background-image: url("/assets/home/mobile/image-header.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -175,20 +175,17 @@ table {
   font-size: 14px;
   line-height: 19.12px;
   letter-spacing: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 16px;
-
 }
-
 
 .hero-text h4 {
   font-weight: 400;
   font-size: 14px;
   line-height: 19.12px;
   letter-spacing: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 16px;
-
 }
 
 .hero-text h1 {
@@ -197,7 +194,6 @@ table {
   line-height: 40px;
   letter-spacing: 1.29px;
   margin-bottom: 24px;
-
 }
 
 .hero-text p {
@@ -206,12 +202,11 @@ table {
   line-height: 25px;
   letter-spacing: 0px;
   margin-bottom: 28px;
-
 }
 
 .see-products-btn {
-  background-color: #D87D4A;
-  color: #FFFFFF;
+  background-color: #d87d4a;
+  color: #ffffff;
   font-weight: 700;
   font-size: 13px;
   line-height: 17.76px;
@@ -221,8 +216,8 @@ table {
   display: flex;
   margin: 0 auto;
   margin-bottom: 112px;
-  background-color: #D87D4A;
-  color: #FFFFFF;
+  background-color: #d87d4a;
+  color: #ffffff;
   font-weight: 700;
   font-size: 13px;
   line-height: 17.76px;
@@ -232,7 +227,6 @@ table {
   display: flex;
   margin: 0 auto;
   margin-bottom: 112px;
-
 }
 
 .categories {
@@ -248,13 +242,12 @@ table {
   margin-inline: 24px;
   margin-top: 92px;
   margin-bottom: 120px;
-
 }
 
 .category-item {
   position: relative;
   position: relative;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   border-radius: 8px;
 }
 
@@ -285,7 +278,6 @@ table {
   text-align: center;
   margin-bottom: 17px;
   margin-top: 88px;
-
 }
 
 .category-item a {
@@ -313,7 +305,6 @@ table {
   gap: 13.32px;
   justify-content: center;
   margin-bottom: 22px;
-
 }
 
 .products {
@@ -321,25 +312,25 @@ table {
 }
 
 .product-zx9 {
-  background-color: #D87D4A;
+  background-color: #d87d4a;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-image: url('/assets/product-zx9-speaker/mobile/circle.png');
+  background-image: url("/assets/product-zx9-speaker/mobile/circle.png");
   padding-inline: 24px;
   height: 600px;
   margin-bottom: 24px;
-  background-color: #D87D4A;
+  background-color: #d87d4a;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-image: url('/assets/product-zx9-speaker/mobile/circle.png');
+  background-image: url("/assets/product-zx9-speaker/mobile/circle.png");
   padding-inline: 24px;
   height: 600px;
   margin-bottom: 24px;
@@ -366,7 +357,6 @@ table {
   text-align: center;
   color: white;
   margin-bottom: 24px;
-
 }
 
 .product-zx9 p {
@@ -375,7 +365,7 @@ table {
   line-height: 25px;
   letter-spacing: 0px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 24px;
 
   font-weight: 400;
@@ -383,30 +373,28 @@ table {
   line-height: 25px;
   letter-spacing: 0px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 24px;
-
 }
 
 .product-zx9-text a {
   background-color: #000000;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 15px 29.5px 15px 31.5px;
   border: none;
   margin-bottom: 55px;
 
   background-color: #000000;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 15px 29.5px 15px 31.5px;
   border: none;
   margin-bottom: 55px;
-
 }
 
 .product-zx7 {
-  background-image: url('/assets/home/mobile/image-speaker-zx7.jpg');
+  background-image: url("/assets/home/mobile/image-speaker-zx7.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -414,7 +402,7 @@ table {
   border-radius: 8px;
   padding-inline: 24px;
   margin-bottom: 24px;
-  background-image: url('/assets/home/mobile/image-speaker-zx7.jpg');
+  background-image: url("/assets/home/mobile/image-speaker-zx7.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -453,11 +441,11 @@ table {
 }
 
 .product-yx1-text {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   padding-inline: 24px;
   border-radius: 8px;
   margin-bottom: 120px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   padding-inline: 24px;
   border-radius: 8px;
   margin-bottom: 120px;
@@ -472,9 +460,7 @@ table {
   margin-bottom: 32px;
 }
 
-
 .product-yx1-text a {
-
   font-weight: 700;
   font-size: 13px;
   line-height: 17.76px;
@@ -496,7 +482,6 @@ table {
   padding: 10px 20px;
   display: inline-block;
   margin-bottom: 41px;
-
 }
 
 .main-content {
@@ -525,12 +510,11 @@ table {
   text-align: center;
   color: #000;
   margin-bottom: 32px;
-
 }
 
 .content-text h3 span {
-  color: #D87D4A;
-  color: #D87D4A;
+  color: #d87d4a;
+  color: #d87d4a;
 }
 
 .content-text p {
@@ -548,7 +532,6 @@ table {
   text-align: center;
   color: #000000;
   margin-bottom: 120px;
-
 }
 
 /* irem section */
@@ -637,7 +620,6 @@ table {
   img {
     height: 225px;
     width: fit-content;
-
   }
 }
 
@@ -768,7 +750,18 @@ table {
   color: var(--white);
   text-decoration: none;
 }
-
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--light-gray);
+  gap: 20px;
+}
+.quantity button {
+  border: none;
+  background-color: var(--light-gray);
+}
 .product-features h2 {
   font-weight: 700;
   font-size: 24px;
@@ -777,7 +770,14 @@ table {
   color: var(--black);
   margin-bottom: 24px;
 }
-
+.product-also-like h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  text-align: center;
+  margin-bottom: 56px;
+}
 .product-features-text {
   font-weight: 400;
   font-size: 15px;
@@ -823,6 +823,37 @@ table {
   margin-bottom: 20px;
 }
 
+.product-also-like-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.86px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.product-also-like-item img {
+  height: 120px;
+  margin-bottom: 32px;
+  border-radius: 15px;
+  background-color: var(--light-gray);
+}
+.product-also-like-item {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-also-like-item a {
+  padding: 15px 30px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
 /* mücahit end */
 
 /* sude start */
@@ -867,7 +898,10 @@ table {
   margin-bottom: 32px;
 }
 
-.billing-details-inputs-container, .billing-details-inputs-container-wrapper, .shipping-info-inputs-container, .shipping-info-inputs-container-wrapper{
+.billing-details-inputs-container,
+.billing-details-inputs-container-wrapper,
+.shipping-info-inputs-container,
+.shipping-info-inputs-container-wrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -963,50 +997,60 @@ table {
   display: block;
 }
 
-.billing-details-input .billing-details-input-text .error-text, .shipping-info-input .shipping-info-input-text .error-text{
+.billing-details-input .billing-details-input-text .error-text,
+.shipping-info-input .shipping-info-input-text .error-text {
   display: none;
 }
 
-.billing-details-input.error .billing-details-input-text .error-text, .shipping-info-input.error .shipping-info-input-text .error-text{
+.billing-details-input.error .billing-details-input-text .error-text,
+.shipping-info-input.error .shipping-info-input-text .error-text {
   display: block;
   font-weight: 500;
 }
 
-.billing-details-input.error .billing-details-input-text, .shipping-info-input.error .shipping-info-input-text{
+.billing-details-input.error .billing-details-input-text,
+.shipping-info-input.error .shipping-info-input-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.billing-details-input.error .billing-details-input-text p, .shipping-info-input.error .shipping-info-input-text p{
-  color: #CD2C2C;
+.billing-details-input.error .billing-details-input-text p,
+.shipping-info-input.error .shipping-info-input-text p {
+  color: #cd2c2c;
 }
 
-.billing-details-input.error input, .shipping-info-input.error input{
-  border-color: #CD2C2C;
+.billing-details-input.error input,
+.shipping-info-input.error input {
+  border-color: #cd2c2c;
 }
 
-.billing-details-input .billing-details-input-text .error-text, .shipping-info-input .shipping-info-input-text .error-text{
+.billing-details-input .billing-details-input-text .error-text,
+.shipping-info-input .shipping-info-input-text .error-text {
   display: none;
 }
 
-.billing-details-input.error .billing-details-input-text .error-text, .shipping-info-input.error .shipping-info-input-text .error-text{
+.billing-details-input.error .billing-details-input-text .error-text,
+.shipping-info-input.error .shipping-info-input-text .error-text {
   display: block;
   font-weight: 500;
 }
 
-.billing-details-input.error .billing-details-input-text, .shipping-info-input.error .shipping-info-input-text{
+.billing-details-input.error .billing-details-input-text,
+.shipping-info-input.error .shipping-info-input-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.billing-details-input.error .billing-details-input-text p, .shipping-info-input.error .shipping-info-input-text p{
-  color: #CD2C2C;
+.billing-details-input.error .billing-details-input-text p,
+.shipping-info-input.error .shipping-info-input-text p {
+  color: #cd2c2c;
 }
 
-.billing-details-input.error input, .shipping-info-input.error input{
-  border-color: #CD2C2C;
+.billing-details-input.error input,
+.shipping-info-input.error input {
+  border-color: #cd2c2c;
 }
 
 #eMoney {
@@ -1027,7 +1071,7 @@ table {
   align-items: center;
 }
 
-.cash-on-delivery p{
+.cash-on-delivery p {
   opacity: 0.5;
   margin: 0;
 }
@@ -1066,13 +1110,13 @@ table {
   gap: 16px;
 }
 
-.checkout-item-wrapper img  {
+.checkout-item-wrapper img {
   width: 64px;
   height: 64px;
   border-radius: 8px;
 }
 
-.checkout-product-detail h4  {
+.checkout-product-detail h4 {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
@@ -1080,7 +1124,7 @@ table {
   color: var(--black);
 }
 
-.checkout-product-detail p  {
+.checkout-product-detail p {
   font-weight: 700;
   font-size: 14px;
   line-height: 25px;
@@ -1159,7 +1203,7 @@ table {
   background-color: var(--black);
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -1190,7 +1234,7 @@ table {
   cursor: pointer;
 }
 
-.footer .navbar ul li a{
+.footer .navbar ul li a {
   text-decoration: none;
   color: var(--white);
 }
@@ -1205,7 +1249,8 @@ table {
   opacity: 0.5;
 }
 
-.footer-bottom, .footer-navbar-container{
+.footer-bottom,
+.footer-navbar-container {
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -1225,14 +1270,13 @@ table {
   align-items: center;
 }
 
-.footer-text-container .social-media{
+.footer-text-container .social-media {
   display: none;
 }
 
-.footer-text-container .social-media{
+.footer-text-container .social-media {
   display: none;
 }
-
 
 #orderCompletedDialog,
 #cart-dialog {
@@ -1245,7 +1289,7 @@ table {
 }
 
 #orderCompletedDialog::backdrop,
-#cart-dialog::backdrop{
+#cart-dialog::backdrop {
   background-color: var(--black);
   opacity: 0.4;
 }
@@ -1296,13 +1340,13 @@ table {
   border-radius: 8px 8px 0 0;
 }
 
-.checkout-items{
+.checkout-items {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.order-details-top .checkout-item p  {
+.order-details-top .checkout-item p {
   margin: 0;
 }
 
@@ -1550,24 +1594,19 @@ table {
   /* berna end */
   /* mücahit start */
   .product-detail {
-    padding: 39px;
+    padding: 0;
   }
-
+  .product-detail-item {
+    display: flex;
+  }
   .icategory-page-preview__mobile {
     display: none;
   }
 
   .product-detail-item img {
+    margin-bottom: 120px;
     width: 281px;
     height: 480px;
-  }
-
-  .product-detail-item {
-    display: flex;
-  }
-
-  .product-detail-item img {
-    margin-bottom: 120px;
   }
 
   .product-detail-text {
@@ -1595,7 +1634,6 @@ table {
     color: var(--black);
     margin-bottom: 31px;
   }
-
   .product-detail-text__button {
     display: flex;
     gap: 16px;
@@ -1607,28 +1645,34 @@ table {
     line-height: 36px;
     letter-spacing: 1.14px;
   }
-
   .product-features-box {
     display: flex;
-		justify-content: stretch;
+    justify-content: stretch;
   }
 
-  .product-detail-images img {
+  .product-detail-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .product-detail-images:nth-child(2) {
+    grid-row: span 2;
+  }
+  .product-also-like-item {
     display: flex;
   }
-
+  /* MUCAHIT TABLET BITIS */
   /* irem section tablet */
 
   .hero {
-    background-image: url('/assets/home/tablet/image-header.jpg');
-    height: 729px; 
+    background-image: url("/assets/home/tablet/image-header.jpg");
+    height: 729px;
     padding-top: 126px;
     margin-bottom: 96px;
   }
 
   .hero-text {
     padding-inline: 174px;
-
   }
 
   .hero-text h1 {
@@ -1636,8 +1680,7 @@ table {
     font-size: 56px;
     line-height: 58px;
     letter-spacing: 2px;
-    text-align: center;  
-
+    text-align: center;
   }
 
   .hero-text p {
@@ -1647,7 +1690,6 @@ table {
     letter-spacing: 0px;
     margin-bottom: 40px;
     padding-inline: 15px;
-
   }
 
   .see-products-btn {
@@ -1661,29 +1703,25 @@ table {
     margin-inline: 39px;
     margin-top: 96px;
     margin-bottom: 96px;
-
   }
 
   .category-item {
-    position: relative; 
-    background-color: #F1F1F1;
+    position: relative;
+    background-color: #f1f1f1;
     border-radius: 8px;
     padding-inline: 64px;
   }
 
-
-
   .category-item h3 {
     margin-bottom: 25px;
   }
-
 
   .products {
     margin-inline: 39px 40px;
   }
 
   .product-zx9 {
-    background-image: url('/assets/product-zx9-speaker/mobile/circle.png');
+    background-image: url("/assets/product-zx9-speaker/mobile/circle.png");
     margin-inline: 39 40px;
     height: 720px;
     margin-bottom: 32px;
@@ -1699,8 +1737,7 @@ table {
     font-weight: 700;
     font-size: 56px;
     line-height: 58px;
-    letter-spacing: 2px;  
-
+    letter-spacing: 2px;
   }
 
   .product-zx9 p {
@@ -1713,12 +1750,11 @@ table {
 
   .product-zx9-text a {
     margin-bottom: 64px;
-    
   }
 
   .product-zx7 {
-    background-image: url('/assets/home/tablet/image-speaker-zx7.jpg');
-    background-size: cover; 
+    background-image: url("/assets/home/tablet/image-speaker-zx7.jpg");
+    background-size: cover;
     padding-inline: 62px;
     margin-bottom: 32px;
   }
@@ -1736,7 +1772,7 @@ table {
   }
 
   .product-yx1-text {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     margin-left: 11px;
     padding-inline: 51px 41px;
     border-radius: 8px;
@@ -1755,7 +1791,6 @@ table {
     margin-bottom: 32px;
   }
   .product-yx1-text a {
-
     font-weight: 700;
     font-size: 13px;
     line-height: 17.76px;
@@ -1763,10 +1798,9 @@ table {
     text-decoration: none;
     color: black;
     border: 2px solid #000000;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     display: inline-block;
     margin-bottom: 41px;
-    
   }
 
   .main-content {
@@ -1787,11 +1821,10 @@ table {
     font-size: 40px;
     line-height: 44px;
     letter-spacing: 1.43px;
-    
   }
 
   .content-text h3 span {
-    color: #D87D4A;
+    color: #d87d4a;
   }
 
   .content-text p {
@@ -1801,145 +1834,125 @@ table {
     letter-spacing: 0px;
     text-align: center;
     margin-bottom: 96px;
-
   }
   /* irem section tablet */
-  /* mücahit tablet */
-  .product-detail-images {
-    display: flex;
-  }
-  .left {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-  .left img {
-    width: 277px;
-    height: 222px;
-    object-fit: cover;
-  }
-  .right {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .right img {
-    width: 395px;
-    object-fit: cover;
-  }
-  .right-img-desktop {
-    display: none;
-  }
-  /* mücahit tablet */
   /* sude start */
-  .product-detail{
+  .product-detail {
     margin-top: 48px;
     margin-bottom: 116px;
     padding-inline: 40px;
   }
-  .section-checkout{
+  .section-checkout {
     padding: 30px 27px;
   }
-  .section-checkout h2{
+  .section-checkout h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 36px;
     letter-spacing: 1.14px;
     margin-bottom: 41px;
   }
-  .billing-details{
+  .billing-details {
     margin-bottom: 53px;
   }
-  .billing-details-inputs-container-wrapper, .shipping-info-inputs-container-wrapper{
+  .billing-details-inputs-container-wrapper,
+  .shipping-info-inputs-container-wrapper {
     flex-direction: row;
     gap: 16px;
     width: 100%;
   }
-  .billing-details-inputs-container input, .shipping-info-inputs-container-wrapper input, .country-input input, .payment-details-radio-btns label, .e-money-details input{
+  .billing-details-inputs-container input,
+  .shipping-info-inputs-container-wrapper input,
+  .country-input input,
+  .payment-details-radio-btns label,
+  .e-money-details input {
     min-width: 309px;
     width: 48%;
   }
-  .shipping-info-inputs-container-wrapper input, .billing-details-inputs-container-wrapper input{
+  .shipping-info-inputs-container-wrapper input,
+  .billing-details-inputs-container-wrapper input {
     width: 100%;
   }
-  .shipping-info{
+  .shipping-info {
     margin-bottom: 61px;
   }
-  .payment-details-radio-container{
+  .payment-details-radio-container {
     display: flex;
     justify-content: space-between;
   }
-  .e-money-details{
+  .e-money-details {
     flex-direction: row;
     gap: 16px;
     margin-top: 24px;
   }
-  .cash-on-delivery p{
+  .cash-on-delivery p {
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
     letter-spacing: 0px;
   }
-  .checkout-summary{
+  .checkout-summary {
     padding: 32px 33px;
   }
-  .checkout-item{
+  .checkout-item {
     align-items: start;
   }
-  .footer-container{
+  .footer-container {
     gap: 32px;
     align-items: start;
     padding: 0 40px 46px;
   }
-  .footer span{
+  .footer span {
     margin-bottom: 20px;
   }
-  .footer .navbar ul{
+  .footer .navbar ul {
     flex-direction: row;
     gap: 34px;
   }
-  .footer p{
+  .footer p {
     text-align: left;
   }
-  .footer-bottom, .footer-navbar-container{
+  .footer-bottom,
+  .footer-navbar-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: 48px;
   }
-  .footer-navbar-container{
+  .footer-navbar-container {
     margin-top: 0;
   }
-  #orderCompletedDialog, #cart-dialog{
+  #orderCompletedDialog,
+  #cart-dialog {
     margin-inline: auto;
   }
-  .order-completed-dialog-container{
+  .order-completed-dialog-container {
     padding: 48px;
   }
-  .order-completed-dialog-container .check-icon{
+  .order-completed-dialog-container .check-icon {
     margin-bottom: 33px;
   }
-  .order-completed-dialog-container h3{
+  .order-completed-dialog-container h3 {
     font-weight: 700;
     font-size: 32px;
     line-height: 36px;
     letter-spacing: 1.14px;
     margin-bottom: 24px;
   }
-  .order-completed-dialog-container .email-text{
+  .order-completed-dialog-container .email-text {
     margin-bottom: 33px;
   }
-  .order-details{
+  .order-details {
     flex-direction: row;
     margin-bottom: 46px;
     min-width: 444px;
   }
-  .order-details-top{
+  .order-details-top {
     border-radius: 8px 0 0 8px;
     width: 100%;
   }
-  .order-details-total{
+  .order-details-total {
     border-radius: 0 8px 8px 0;
     padding: 41px 24px 42px;
     width: 78%;
@@ -1948,10 +1961,10 @@ table {
     flex-direction: column;
     justify-content: end;
   }
-  #cart-dialog{
+  #cart-dialog {
     width: 377px;
   }
-  .cart-dialog-container{
+  .cart-dialog-container {
     padding: 32px;
   }
   /* sude end */
@@ -1965,74 +1978,68 @@ table {
   }
 
   .hero {
-    background-image: url('/assets/home/desktop/image-hero.jpg');
-    height: 729px; 
+    background-image: url("/assets/home/desktop/image-hero.jpg");
+    height: 729px;
     padding-top: 128px;
     margin-bottom: 120px;
   }
-  
-  .hero-text{
+
+  .hero-text {
     text-align: left;
     width: 379px;
     padding-inline: 0px;
     margin-left: 165px;
     margin-top: 128px;
-
   }
-  
+
   .hero-text h1 {
     text-align: left;
   }
-  
+
   .hero-text p {
     margin-bottom: 40px;
     text-align: left;
     padding-inline: 0px;
-  
   }
-  
+
   .see-products-btn {
     text-align: left;
     margin: 0;
     margin-left: 165px;
   }
-  
+
   .categories {
     gap: 30px;
     margin-top: 120px;
     margin-bottom: 168px;
     justify-content: center;
     margin-inline: 165px;
-  
   }
 
   .category-item {
     width: 350px;
   }
-  
+
   .category-item h3 {
     margin-bottom: 25px;
   }
-  
-  
+
   .products {
     margin-inline: 165px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
-  
+
   .product-zx9 {
-    background-image: url('/assets/product-zx9-speaker/mobile/circle.png');
+    background-image: url("/assets/product-zx9-speaker/mobile/circle.png");
     margin-bottom: 48px;
     padding-inline: 117px 95px;
     display: flex;
     flex-direction: row;
     gap: 138px;
-
   }
-  
+
   .product-zx9 img {
     width: 410px;
     margin-top: 96px;
@@ -2041,9 +2048,8 @@ table {
   .product-zx9 h2 {
     text-align: left;
     margin-bottom: 24px;
-  
   }
-  
+
   .product-zx9 p {
     text-align: left;
     margin-bottom: 40px;
@@ -2052,19 +2058,18 @@ table {
   .product-zx9-text {
     text-align: left;
   }
-  
+
   .product-zx9-text a {
     margin-bottom: 64px;
-    
   }
-  
+
   .product-zx7 {
-    background-image: url('/assets/home/desktop/image-speaker-zx7.jpg');
-    background-size: cover; 
+    background-image: url("/assets/home/desktop/image-speaker-zx7.jpg");
+    background-size: cover;
     padding-inline: 95px;
     margin-bottom: 48px;
   }
-  
+
   .product-yx1 {
     display: flex;
     margin-bottom: 200px;
@@ -2073,7 +2078,7 @@ table {
   .product-yx1-text {
     margin-bottom: 0px;
   }
-  
+
   .product-yx1 img {
     gap: 11px;
     border-radius: 8px;
@@ -2081,30 +2086,30 @@ table {
     margin-bottom: 0px;
     width: 100%;
   }
-  
+
   .main-content {
     margin-inline: 165px;
     display: flex;
     flex-direction: row-reverse;
     gap: 125px;
   }
-  
+
   .main-content img {
     margin-bottom: 63px;
   }
-  
+
   .content-text {
     padding-inline: 0px;
   }
-  
+
   .content-text h3 {
     text-align: left;
   }
-  
+
   .content-text h3 span {
-    color: #D87D4A;
+    color: #d87d4a;
   }
-  
+
   .content-text p {
     text-align: left;
     margin-bottom: 96px;
@@ -2186,7 +2191,7 @@ table {
     min-height: 300px;
     max-height: 350px;
   }
-  
+
   /* Berna desktop */
 
   /* mücahit desktop */
@@ -2211,10 +2216,11 @@ table {
   .icategory-page-preview__tablet {
     display: none;
   }
-  .product-detail-item img{
+  .product-detail-item img {
     width: 540px;
     height: 560px;
   }
+
   .left {
     margin-right: 30px;
   }
@@ -2229,70 +2235,73 @@ table {
   }
   /* mücahit desktop */
   /* sude start */
-  .product-detail{
+  .product-detail {
     width: 1110px;
     margin: 0 auto;
     margin-top: 79px;
     margin-bottom: 141px;
     padding-inline: 0;
   }
-  .product-detail-checkout{
+  .product-detail-checkout {
     display: flex;
     gap: 30px;
     width: 100%;
   }
-  .billing-details input:hover, .shipping-info input:hover, .e-money-details-item input:hover, .payment-details-radio-label:hover{
+  .billing-details input:hover,
+  .shipping-info input:hover,
+  .e-money-details-item input:hover,
+  .payment-details-radio-label:hover {
     border-color: var(--orange);
     transition: all 0.5s;
   }
-  .section-checkout{
+  .section-checkout {
     padding: 54px 48px 48px;
   }
-  .e-money-details, .cash-on-delivery{
+  .e-money-details,
+  .cash-on-delivery {
     margin-top: 30px;
   }
-  .checkout-summary{
+  .checkout-summary {
     height: fit-content;
     width: 100%;
   }
-  .footer-container{
+  .footer-container {
     width: 1110px;
     margin: 0 auto;
     gap: 36px;
     align-items: start;
     padding: 0 0 48px;
   }
-  .footer span{
+  .footer span {
     margin-bottom: 35px;
   }
-  .footer-text-container .social-media{
+  .footer-text-container .social-media {
     display: flex;
   }
-  .footer-text-container{
+  .footer-text-container {
     display: flex;
     align-items: end;
     justify-content: space-between;
     width: 100%;
   }
-  .footer-text-container p{
+  .footer-text-container p {
     width: 540px;
   }
-  .footer-bottom{
+  .footer-bottom {
     margin-top: 20px;
   }
-  .footer-bottom .social-media{
+  .footer-bottom .social-media {
     display: none;
   }
-  .btn:hover{
+  .btn:hover {
     background-color: var(--light-orange);
     transition: all 0.5s;
   }
-  .product-detail .go-back-btn:hover, .cart-dialog-container-top button:hover{
+  .product-detail .go-back-btn:hover,
+  .cart-dialog-container-top button:hover {
     color: var(--orange);
     opacity: 1;
     transition: all 0.5s;
   }
   /* sude end */
-  
-  
 }
