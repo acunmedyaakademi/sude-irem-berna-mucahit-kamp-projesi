@@ -743,6 +743,7 @@ table {
   display: flex;
   gap: 16px;
   margin-bottom: 88px;
+  justify-content: space-between;
 }
 
 .product-detail-text__button p {
@@ -758,18 +759,37 @@ table {
   background-color: var(--orange);
   color: var(--white);
   text-decoration: none;
+  width: inherit;
+  padding: 15px 30.5px 15px 34.5px;
 }
 .quantity {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 15px;
   background-color: var(--light-gray);
   gap: 20px;
 }
 .quantity button {
   border: none;
-  background-color: var(--light-gray);
+  background-color: var(--gray);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--black);
+  opacity: 0.25;
+  width: 16px;
+}
+#quantityBtn{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--black);
+  width: 16px;
 }
 .product-features h2 {
   font-weight: 700;
@@ -819,6 +839,7 @@ table {
   letter-spacing: 0px;
   margin-bottom: 8px;
   color: var(--black);
+  opacity: 0.5;
 }
 
 .product-features-box__item span p:first-child {
@@ -830,6 +851,10 @@ table {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.product-also-like-item-container{
+  display: flex;
 }
 
 .product-also-like-item h3 {
@@ -1298,7 +1323,7 @@ table {
 }
 
 #orderCompletedDialog::backdrop,
-#cartDialog::backdrop{
+#cartDialog::backdrop {
   background-color: var(--black);
   opacity: 0.4;
 }
@@ -1680,6 +1705,7 @@ table {
     display: flex;
     gap: 16px;
     margin-bottom: 88px;
+    justify-content: start;
   }
 
   .product-features-box h2 {
@@ -1688,8 +1714,8 @@ table {
     letter-spacing: 1.14px;
   }
   .product-features-box {
-    display: flex;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .product-detail-images {
@@ -1697,12 +1723,15 @@ table {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     gap: 18px 20px;
+    margin-bottom: 120px;
   }
-  .product-detail-images img{
-    margin-bottom: 0;
+  .product-detail-images img {
+    height: 174px;
+    margin: 0;
   }
   .product-detail-images img:nth-child(2) {
     grid-row: span 2;
+    height: auto;
   }
   .product-also-like-item {
     display: flex;
@@ -1969,7 +1998,8 @@ table {
   .footer-navbar-container {
     margin-top: 0;
   }
-  #orderCompletedDialog, #cartDialog{
+  #orderCompletedDialog,
+  #cartDialog {
     margin-inline: auto;
   }
   #cartDialog{
@@ -2010,7 +2040,7 @@ table {
     flex-direction: column;
     justify-content: end;
   }
-  #cartDialog{
+  #cartDialog {
     width: 377px;
   }
   .cart-dialog-container {
@@ -2319,6 +2349,7 @@ table {
     margin-right: 120px;
   }
   .product-features-box {
+    display: flex;
     flex-direction: column;
     justify-content: start;
   }
@@ -2341,6 +2372,18 @@ table {
   }
   .right-img-desktop {
     display: block;
+  }
+  .product-detail-images img {
+    height: auto;
+  }
+  .product-detail-text__button a {
+    padding: 15px 30px;
+  }
+  .product-detail-text h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
   }
   /* mücahit desktop */
   /* sude start */
