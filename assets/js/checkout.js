@@ -15,6 +15,11 @@ function init(){
     }
   });
   hamburgerMenuBtn.addEventListener('click', showHamburgerMenu);
+  hamburgerMenu.addEventListener('click', (e) => {
+    if (!document.querySelector('.hamburgermenu-container').contains(e.target)) {
+      hamburgerMenu.close();
+    }
+  });
 }
 
 async function getData() {
@@ -256,20 +261,35 @@ function renderCart(){
 }
 
 function renderCategories(categories){
+  const categoriesContainer = document.querySelector('.categories');
   const categoryNames = new Set(categories.map(x => x.category));
   let categoryItems = [];
   for (const x of categoryNames) {
     categoryItems.push(categories.find(category => category.category === x));
   }
-  hamburgerMenu.innerHTML = categoryItems.map(x => 
+  console.log(categoryItems);
+  categoriesContainer.innerHTML = categoryItems.map(x => 
     `
       <div class="category-item">
         <img class="category-img" src="..${x.categoryImage.svg}" alt="Speakers Img">
-        <h3>${x.category}</h3>
-        <a id="speakers-pages" href="./${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
+        <h3>${x.category.toUpperCase()}</h3>
+        <a id="speakers-pages" href="../pages/${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
       </div>
     `
   );
+  hamburgerMenu.innerHTML = `
+  <div class="hamburgermenu-container">
+    ${categoryItems.map(x => 
+      `
+        <div class="category-item">
+          <img class="category-img" src="..${x.categoryImage.svg}" alt="Speakers Img">
+          <h3>${x.category.toUpperCase()}</h3>
+          <a id="speakers-pages" href="../pages/${x.category}.html">Shop<img src="/assets/home/mobile/right.svg" alt=""></a>
+        </div>
+      `
+    ).join("")}
+  </div>
+  `
 }
 
 function showHamburgerMenu(e){
