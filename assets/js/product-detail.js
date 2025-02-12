@@ -6,21 +6,23 @@ async function getData() {
   renderProduct(selectedProduct);
 }
 
-function init(){
-  const cartIcon = document.querySelector('.cart-icon');
-  cartIcon.addEventListener('click', showCart);
-  goBackBtn.addEventListener('click' ,  goBack);
+function init() {
+  const cartIcon = document.querySelector(".cart-icon");
+  cartIcon.addEventListener("click", showCart);
+  goBackBtn.addEventListener("click", goBack);
   getData();
-  cartDialog.addEventListener('click', (e) => {
-    const cartContainer = document.querySelector('.cart-dialog-container');
+  cartDialog.addEventListener("click", (e) => {
+    const cartContainer = document.querySelector(".cart-dialog-container");
     const isInsideCart = cartContainer.contains(e.target);
-    const isPlusOrMinus = e.target.classList.contains('plus-icon') || e.target.classList.contains('minus-icon');
-  
+    const isPlusOrMinus =
+      e.target.classList.contains("plus-icon") ||
+      e.target.classList.contains("minus-icon");
+
     if (!isInsideCart && !isPlusOrMinus) {
       cartDialog.close();
     }
   });
-  hamburgerMenuBtn.addEventListener('click', showHamburgerMenu);
+  hamburgerMenuBtn.addEventListener("click", showHamburgerMenu);
 }
 
 function renderCategories(categories) {
@@ -40,8 +42,9 @@ function renderCategories(categories) {
       </div>
     `
   );
-  hamburgerMenu.innerHTML = categoryItems.map(x => 
-    `
+  hamburgerMenu.innerHTML = categoryItems.map(
+    (x) =>
+      `
       <div class="category-item">
         <img class="category-img" src="..${x.categoryImage.svg}" alt="Speakers Img">
         <h3>${x.category}</h3>
@@ -106,27 +109,33 @@ function renderProduct(product) {
   `;
 
   const productDetailImages = document.querySelector(".product-detail-images");
-  productDetailImages.innerHTML = product.gallery.map(
-    (x) => `
+  productDetailImages.innerHTML = product.gallery
+    .map(
+      (x) => `
   <img class="detail-images-grid" src="..${x.desktop}" alt="1x">
   `
-  ).join('');
+    )
+    .join("");
 
   const productAlsoLike = document.querySelector(".product-also-like");
   productAlsoLike.innerHTML = `
+  <div class="also-like-item">
+  
    <h3>YOU MAY ALSO LIKE</h3>
   ${product.others
     .map(
-      (x) => `
-           
-     <div class="product-also-like-item">
+      (x) =>
+        `
+      <div class="product-also-item">      
+        <div class="product-also-like-item">
           <img src="..${x.image.desktop}" alt="">
           <h3>${x.name}</h3>
           <a id="productBtn" href="product-detail.html#/${x.slug}">See Product</a>
         </div>
+      </div>
     `
     )
-    .join("")}`
+    .join("")} </div>`;
   window.addEventListener("hashchange", function () {
     location.reload();
     window.scrollTo(0, 0);
@@ -156,18 +165,18 @@ function goBack(e) {
   window.history.back();
 }
 
-function showCart(e){
+function showCart(e) {
   e.preventDefault();
   cartDialog.showModal();
   renderCart();
 }
 
-function renderCart(){
+function renderCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   let totalPrice = 0;
   let totalItems = 0;
   for (const item of cart) {
-    totalPrice = totalPrice + (item.price * item.quantity);
+    totalPrice = totalPrice + item.price * item.quantity;
     totalItems = totalItems + item.quantity;
   }
   cartDialog.innerHTML = `
@@ -177,13 +186,14 @@ function renderCart(){
         <button id="removeAllBtn">Remove all</button>
       </div>
       <div class="cart-items">
-        ${cart.map(x => `
+        ${cart.map(
+          (x) => `
             <div class="cart-item">
               <div class="cart-item-wrapper">
                 <img src="..${x.image}">
                 <div class="cart-item-wrapper-text">
-                  <h3>${(x.name)}</h3>
-                  <p>$ ${(x.price) }</p>
+                  <h3>${x.name}</h3>
+                  <p>$ ${x.price}</p>
                 </div>
               </div>
               <div class="quantity-btn">
@@ -192,7 +202,8 @@ function renderCart(){
                 <p class="plus-icon" data-name="${x.name}">+</p>
               </div>
             </div>
-          `)}
+          `
+        )}
       </div>
       <div class="total-price">
         <p>TOTAL</p>
@@ -200,45 +211,48 @@ function renderCart(){
       </div>
       <a href="checkout.html" class="btn">CHECKOUT</a>
     </div>
-  `
-  const minusIcons = document.querySelectorAll('.minus-icon');
+  `;
+  const minusIcons = document.querySelectorAll(".minus-icon");
   for (const minusIcon of minusIcons) {
-    minusIcon.addEventListener('click', (e) => {
-      const selectedItem = cart.findIndex(x => x.name === e.target.dataset.name);
-      if(cart[selectedItem].quantity === 1){
+    minusIcon.addEventListener("click", (e) => {
+      const selectedItem = cart.findIndex(
+        (x) => x.name === e.target.dataset.name
+      );
+      if (cart[selectedItem].quantity === 1) {
         cart.splice(selectedItem, 1);
         localStorage.cart = JSON.stringify(cart);
         renderCart();
-      } else{
+      } else {
         cart[selectedItem].quantity = cart[selectedItem].quantity - 1;
         localStorage.cart = JSON.stringify(cart);
         renderCart();
       }
-    })
+    });
   }
 
-  const plusIcons = document.querySelectorAll('.plus-icon');
+  const plusIcons = document.querySelectorAll(".plus-icon");
   for (const plusIcon of plusIcons) {
-    plusIcon.addEventListener('click', (e) => {
-      const selectedItem = cart.findIndex(x => x.name === e.target.dataset.name);
+    plusIcon.addEventListener("click", (e) => {
+      const selectedItem = cart.findIndex(
+        (x) => x.name === e.target.dataset.name
+      );
       cart[selectedItem].quantity = cart[selectedItem].quantity + 1;
       localStorage.cart = JSON.stringify(cart);
       renderCart();
-    })
+    });
   }
 
-  removeAllBtn.addEventListener('click', () => {
-    if(confirm('Silmek istediğinize emin misiniz?')){
+  removeAllBtn.addEventListener("click", () => {
+    if (confirm("Silmek istediğinize emin misiniz?")) {
       localStorage.cart = JSON.stringify([]);
       cartDialog.close();
     }
-  })
+  });
 }
 
-function showHamburgerMenu(e){
+function showHamburgerMenu(e) {
   e.preventDefault();
   hamburgerMenu.showModal();
 }
 
 init();
-

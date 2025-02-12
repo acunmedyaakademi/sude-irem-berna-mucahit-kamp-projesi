@@ -1289,7 +1289,7 @@ table {
 }
 
 #orderCompletedDialog::backdrop,
-#cartDialog::backdrop{
+#cartDialog::backdrop {
   background-color: var(--black);
   opacity: 0.4;
 }
@@ -1655,12 +1655,15 @@ table {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     gap: 18px 20px;
+    margin-bottom: 120px;
   }
-  .product-detail-images img{
-    margin-bottom: 0;
+  .product-detail-images img {
+    height: 174px;
+    margin: 0;
   }
   .product-detail-images img:nth-child(2) {
     grid-row: span 2;
+    height: auto;
   }
   .product-also-like-item {
     display: flex;
@@ -1927,7 +1930,8 @@ table {
   .footer-navbar-container {
     margin-top: 0;
   }
-  #orderCompletedDialog, #cartDialog{
+  #orderCompletedDialog,
+  #cartDialog {
     margin-inline: auto;
   }
   .order-completed-dialog-container {
@@ -1964,7 +1968,7 @@ table {
     flex-direction: column;
     justify-content: end;
   }
-  #cartDialog{
+  #cartDialog {
     width: 377px;
   }
   .cart-dialog-container {
@@ -2235,6 +2239,12 @@ table {
   }
   .right-img-desktop {
     display: block;
+  }
+  .product-detail-images img {
+    height: auto;
+  }
+  .product-detail-text__button a {
+    padding: 15px 30px;
   }
   /* mücahit desktop */
   /* sude start */
