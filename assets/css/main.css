@@ -1692,6 +1692,7 @@ table {
   .product-detail-item img {
     margin-bottom: 120px;
     width: 281px;
+    object-fit: cover;
     height: 480px;
   }
 
@@ -2449,6 +2450,7 @@ table {
     font-size: 40px;
     line-height: 44px;
     letter-spacing: 1.43px;
+    text-transform: uppercase;
   }
   .product-also-like-item {
     display: flex;
