@@ -150,14 +150,15 @@ table {
 
 /* irem section */
 
-.container .header-container, .container .header{
+.container .header-container,
+.container .header {
   background-color: #141414;
 }
 
 .hero {
-  background-image: url('../home/mobile/hero-bg--mobile.svg');
+  background-image: url("../home/mobile/hero-bg--mobile.svg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: bottom;
   background-color: #141414;
   width: 100%;
@@ -182,7 +183,7 @@ table {
   opacity: 0.5;
 }
 
-.hero-container img{
+.hero-container img {
   display: none;
 }
 
@@ -211,13 +212,13 @@ table {
   margin-bottom: 28px;
 }
 
-.see-product-btn-container{
+.see-product-btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.see-product-btn-container{
+.see-product-btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -796,7 +797,7 @@ table {
   opacity: 0.25;
   width: 16px;
 }
-#quantityBtn{
+#quantityBtn {
   font-weight: 700;
   font-size: 13px;
   line-height: 17.76px;
@@ -867,10 +868,6 @@ table {
   margin-bottom: 20px;
 }
 
-.product-also-like-item-container{
-  display: flex;
-}
-
 .product-also-like-item h3 {
   font-weight: 700;
   font-size: 24px;
@@ -878,6 +875,12 @@ table {
   letter-spacing: 0.86px;
   text-align: center;
   margin-bottom: 40px;
+}
+.alsolike-tablet {
+  display: none;
+}
+.alsolike-desktop {
+  display: none;
 }
 .product-also-like-item img {
   height: 120px;
@@ -1469,7 +1472,6 @@ table {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 31px;
-
 }
 
 .cart-dialog-container-top h3 {
@@ -1598,7 +1600,7 @@ table {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 90px; 
+  top: 90px;
   left: 0;
   border: none;
 
@@ -1619,7 +1621,6 @@ table {
   background-color: var(--black);
   opacity: 0.4;
 }
-
 
 @media only screen and (max-width: 768px) {
   .icategory-page-preview__mobile {
@@ -1747,15 +1748,31 @@ table {
     grid-row: span 2;
     height: auto;
   }
-  .product-also-like-item {
+  .product-also-like-item-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11px;
+  }
+  .product-also-like-item img {
+    width: 100%;
+    height: auto;
+  }
+  .alsolike-desktop {
+    display: none;
+  }
+  .alsolike-img__mobile {
+    display: none;
+  }
+  .alsolike-tablet {
+    display: block;
   }
   /* MUCAHIT TABLET BITIS */
   /* irem section tablet */
 
   .hero {
-    background-image: url('../home/tablet/hero-bg--tablet.svg');
-    height: 639px; 
+    background-image: url("../home/tablet/hero-bg--tablet.svg");
+    height: 639px;
     padding-top: 126px;
     margin-bottom: 96px;
   }
@@ -2028,11 +2045,11 @@ table {
   #cartDialog {
     margin-inline: auto;
   }
-  #cartDialog{
+  #cartDialog {
     right: 40px;
     margin-inline: 0;
   }
-  .order-completed-dialog-container{
+  .order-completed-dialog-container {
     padding: 48px;
   }
   .order-completed-dialog-container .check-icon {
@@ -2090,7 +2107,7 @@ table {
       margin-top: 56px;
     }
     .category-item h3 {
-        padding-top: 0px;
+      padding-top: 0px;
     }
   }
 
@@ -2111,40 +2128,38 @@ table {
   }
 }
 
-
 @media only screen and (min-width: 1280px) {
   /* irem section desktop */
 
   .hero {
     background-image: none;
     background-color: #131313;
-    height: 632px; 
+    height: 632px;
     padding-top: 0;
     padding-inline: 0;
     margin-bottom: 120px;
     position: relative;
   }
 
-  .hero-container{
+  .hero-container {
     width: 1152px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
-  .hero-container img{
+
+  .hero-container img {
     display: block;
   }
 
-  .hero-text{
+  .hero-text {
     text-align: left;
     padding-inline: 0px;
     margin: 0 auto;
-
   }
 
-  .hero-text-container{
+  .hero-text-container {
     width: 398px;
   }
 
@@ -2153,7 +2168,7 @@ table {
     width: 379px;
   }
 
-  .hero-text h4{
+  .hero-text h4 {
     display: inline-block;
   }
 
@@ -2164,7 +2179,7 @@ table {
     width: 379px;
   }
 
-  .see-product-btn-container{
+  .see-product-btn-container {
     justify-content: start;
   }
 
@@ -2427,6 +2442,22 @@ table {
     line-height: 44px;
     letter-spacing: 1.43px;
   }
+  .product-also-like-item {
+    display: flex;
+  }
+  .alsolike-img__mobile {
+    display: none;
+  }
+  .alsolike-tablet {
+    display: none;
+  }
+  .alsolike-desktop {
+    display: block;
+  }
+  .product-also-like-item-container {
+    border-radius: 8px;
+    gap: 30px;
+  }
   /* mücahit desktop */
   /* sude start */
   .product-detail {
@@ -2497,7 +2528,7 @@ table {
     opacity: 1;
     transition: all 0.5s;
   }
-  .cart-dialog-container{
+  .cart-dialog-container {
     right: 165px;
   }
   /* sude end */
