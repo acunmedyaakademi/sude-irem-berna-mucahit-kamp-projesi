@@ -796,6 +796,7 @@ table {
   color: var(--black);
   opacity: 0.25;
   width: 16px;
+  cursor: pointer;
 }
 #quantityBtn {
   font-weight: 700;
@@ -1562,6 +1563,7 @@ table {
   color: var(--black);
   opacity: 0.25;
   width: 16px;
+  cursor: pointer;
 }
 
 .quantity-btn .quantity {
